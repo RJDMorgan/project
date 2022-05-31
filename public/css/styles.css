@@ -1,0 +1,97 @@
+body
+{
+    margin:0;
+    background-color:#000;
+    color:#fff;
+    text-align:center;
+}
+
+header
+{
+    display:flex;
+    position:relative;
+}
+
+a
+{
+    text-decoration:none;
+    color:#fff;
+}
+
+.accueil
+{
+    width:50%;
+    text-transform:uppercase;
+}
+
+.login
+{
+    width:10%;
+    position:absolute;
+    right:0;
+    text-transform:uppercase;
+}
+
+.conteneur
+{
+    border:2px solid #fff;
+    display:flex;
+    margin-top:25px;
+    justify-content:space-around;
+}
+
+.conteneur 
+a
+{
+    border:2px solid #800;
+    width:30%;
+    height:200px;
+}
+
+/*************************CATEGORIE*/
+.list_article
+{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    gap:20px;
+}
+
+.info_article
+{
+    border:2px solid #800;
+    border-radius:10px;
+    width:150px;
+    height:150px;
+    transition:all 1s;
+    transform:scale(1);
+}
+
+.info_article:hover
+{
+    transition:all 1s;
+    transform:scale(0.8);
+}
+
+/******************************FORM*/
+.formulaire
+{
+    display:flex;
+}
+
+.inscript
+{
+    width:50%;
+}
+
+.connex
+{
+    width:50%;
+}
+
+/****************************FOOTER*/
+footer
+{
+    text-decoration:none;
+    color:#fff;
+}
