@@ -6,15 +6,15 @@ $profil = new ManageProfil();
 
 if(isset($_POST['submit']))
 {
-    $pseudo = $_POST['pseudo']??'';
+    $pseudo = htmlspecialchars($_POST['pseudo'])??'';
     
-    $mail = $_POST['mail']??'';
+    $mail = htmlspecialchars($_POST['mail'])??'';
     
-    $password = md5($_POST['password'])??'';
+    $password = htmlspecialchars(password_hash($_POST['password'], PASSWORD_BCRYPT))??'';
     
-    $city = $_POST['city']??'';
+    $city = htmlspecialchars($_POST['city'])??'';
     
-    $cp = $_POST['postal_code']??'';
+    $cp = htmlspecialchars($_POST['postal_code'])??'';
     
     $create = $profil->createProfil($pseudo, $mail, $password, $city, $cp);
 
