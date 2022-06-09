@@ -27,4 +27,6 @@ class Manage
         $stmt->execute($data);
         return $stmt;
     }
+    
+    
 }

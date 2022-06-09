@@ -10,7 +10,7 @@ class ManageArticle extends Manage
         {
             // on récupe la liste d'article par catégorie
             $data = ['id'=> intval($id)];
-            return $this->getQuery("SELECT id, title, DATE_FORMAT(date,'%e-%c-%Y') as date FROM article WHERE categorie_id=:id", $data);
+            return $this->getQuery("SELECT id, title, DATE_FORMAT(date,'%d-%m-%Y') as date FROM article WHERE categorie_id=:id", $data);
         }
         else
         {
@@ -25,4 +25,16 @@ class ManageArticle extends Manage
         return $this->getQuery("SELECT id, title, date, categorie_id FROM article WHERE id=:id", $data);
     }
     
+    public function getArticle(int $id):object
+    {
+        $data = ['id'=> intval($id)];
+        return $this->getQuery("SELECT id, title, DATE_FORMAT(date,'%d-%m-%Y') as date, content, user_id, categorie_id FROM article WHERE id=:id", $data);
+    }
+    
+    public function getArtMember(int $id, int $categ):object
+    {
+        $data = ['id'=> $id,
+            'categ'=> $categ];
+            return $this->getQuery("SELECT id, title, date, categorie_id FROM article WHERE user_id=:id AND categorie_id=:categ", $data);
+    }
 }

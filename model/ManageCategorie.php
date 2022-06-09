@@ -9,4 +9,10 @@ class ManageCategorie extends Manage
         $data = ['id'=> intval ($id)];
         return $this->getQuery("SELECT id, name FROM categorie WHERE id=:id", $data);
     }
+    
+    public function getCategMember(int $id):object
+    {
+        $data = ['id'=> intval ($id)];
+        return $this->getQuery("SELECT id, name, user_id, article_id, podcast_id FROM categorie WHERE user_id=:id", $data);
+    }
 }

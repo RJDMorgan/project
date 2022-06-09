@@ -2,37 +2,41 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?=$title?></title>
     <link rel="stylesheet" href="./public/css/styles.css" type="text/css">
 </head>
 <body>
     
+    <nav class="<?=$nav_site?>">
+        <a class="<?=$nav[1]?>" href = "index.php?page=categorie&id=1">Jeux Vidéos</a>
+        <a class="<?=$nav[2]?>" href = "index.php?page=categorie&id=2">Manga</a>
+        <a class="<?=$nav[3]?>" href = "index.php?page=categorie&id=3">Cinéma</a>
+        <a class="<?=$nav[4]?>" href = "index.php?page=categorie&id=4">Séries TV</a>
+    </nav>
+    
     <header>
-        <a href = "index.php?page=home" class="accueil">
-            <h1><?=$title?></h1>
-        </a>
-        <a href = "index.php?page=login" class="login">
-            <h2>LOG IN</h2>
+        <a href = "index.php?page=home">
+            <h1><?=$subtitle?></h1>
         </a>
     </header>
     
+    <a class="<?=$login?>" href = "index.php?page=login">LOG IN</a>
     
-    <div class = "conteneur">
-        <a href = "index.php?page=categorie&id=1">JEUX VIDEOS</a>
-        <a href = "index.php?page=categorie&id=2">MANGA</a>
-    </div>
+    <nav class="<?=$nav_categ?>">
+        <a class="<?=$nav[1]?>" href = "index.php?page=categorie&id=1">Jeux Vidéos</a>
+        <a class="<?=$nav[2]?>" href = "index.php?page=categorie&id=2">Manga</a>
+        <a class="<?=$nav[3]?>" href = "index.php?page=categorie&id=3">Cinéma</a>
+        <a class="<?=$nav[4]?>" href = "index.php?page=categorie&id=4">Séries TV</a>
+    </nav>
     
-    <div class = "conteneur">
-        <a href = "index.php?page=categorie&id=3">CINEMA</a>
-        <a href = "index.php?page=categorie&id=4">SERIES TV</a>
-    </div>
     
-    <main>
-        <?=$content?>
-    </main>
+    
+    <?=$content?>
+        
         
     <footer>
-        Copyright ! 
+        Copyright and Company !!! 
     </footer>
 </body>
 </html>

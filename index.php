@@ -12,6 +12,9 @@ if(isset($_GET['id']))
     $id = intval($_GET['id']);
 }
 
+$nav_categ = '';
+$nav = array('','','','','');
+
 switch($page)
 {
     case 'login' :
@@ -24,6 +27,10 @@ switch($page)
         
     case 'article' :
         require './controller/article.php';
+        break;
+        
+    case 'categMember' :
+        require './controller/categMember.php';
         break;
         
     default :

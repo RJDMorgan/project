@@ -1,28 +1,32 @@
-page d'accueil -> barre de navig et bouton login
-
-    div catégories lorsqu'on clique cela affiche la liste d'article de la catégorie du plus récent au moins récent
+page home
+    non-co || non-inscrit
+        visite des catégories
+        lecture des articles
+        écoute des podcasts
+        inscription
         
-        lorsqu'on clique sur la case article on affiche l'article dans le profil de l'auteur
+        (vote sondages ?)
+            (nouvelles catégories ? livres, voyages, opinions)
+        (com-mess privés ?)
+        (système de sondages pour les likes ?)
+            (avez-vous aimé cet article/podcast ?)
+        (notifs des articles non-lus ?)
         
-        la page d'accueil devient une barre de navig en haut de l'écran affichant toutes les autres
-        catégories sauf login
-
-inscription--
-    (mail de confirmation ?) 
-        page profil--
-        catégories persos--
-        paramètres--
-            personnalisation si souhaité--
-                image background--
-                police--
-                couleur textes et cases
-            sauvegarde des modifs dans la base pour la connexion
-
-connexion
-    page membre personnalisé-- avec navigation dans le site commun--
-
-suivi des auteur(e)(s)
-
-page admin
-
-au fur et à mesure des idées tester le css
+    inscrit
+        page profil (neutre)
+            onglets
+                accueil
+                    stat
+                        % visiteurs
+                        dernier article posté
+                        nombre d'articles
+                        suivi <=> auteur
+                catégories
+                    
+                paramètres
+                    personnalisable
+                        background (couleur, image)
+                        couleurs (éléments, police)
+                        police
+                        com-mess privés activable
+                        (onglets ou autres ?)

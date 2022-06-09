@@ -2,23 +2,22 @@
 
 ob_start();
 
-$title = $info_categ['name'];
+$title = 'NOM DU SITE';
+$subtitle = $info_categ['name'];
 
-echo '<div class="list_article">';
+echo '<main>';
 while($r = $list_art->fetch(PDO::FETCH_ASSOC))
 {
-    
     echo
-    '<a href="index.php?page=article&profilmembre">
-        <div class="info_article">
+    '<a href="index.php?page=article&id='.$r['id'].'">
+        <div class="info_kiji">
             <h2>'.$r['title'].'</h2>
             <p>Posté le : '.$r['date'].'</p>
         </div>
     </a>';
-    
 }
 
-echo '</div>';
+echo '</main>';
 
 $content = ob_get_clean();
 

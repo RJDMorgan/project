@@ -1,6 +1,10 @@
 <?php //view
 
-$title = 'LOG IN...';
+$title = 'NOM DU SITE';
+
+$subtitle = 'LOG IN...';
+
+$token = bin2hex(md5(uniqid(random_bytes(32))));
 
 ?>
 
@@ -14,6 +18,8 @@ $title = 'LOG IN...';
         
         <label for="password">Mot de Passe : </label><br>
         <input type="password" name="password" id="password"/><br>
+        
+        <input type="hidden" name="token" value="<?=$token?>">
         
         <label for="city">Ville : </label><br>
         <input type="text" name="city" id="city"/><br>
