@@ -4,7 +4,7 @@ ob_start();
 
 $title = 'Nom du site';
 $subtitle = 'Nom de l\'auteur';
-$article = $->fetch();
+$article = $list_art_perso->fetch();
 
 echo '<div class="navMembre">
         <a href="index.php?page=categMember&id='.$article['user_id'].'&categ=1" class="categMembre">Jeux Vidéos</a>
@@ -18,10 +18,12 @@ if($list_art_perso->rowCount()) {
     while($r = $list_art_perso->fetch(PDO::FETCH_ASSOC))
     {
         echo
-            '<div class="listArtMembre">
-                <p>'.$r['title'].'</p>
-                <p>Posté le : '.$r['date'].'</p>
-            </div>';
+            '<a href="index.php?page=article&id='.$r['id'].'">
+                <div class="listArtMembre">
+                    <p>'.$r['title'].'</p>
+                    <p>Posté le : '.$r['date'].'</p>
+                </div>
+            </a>';
             
     }
 }
