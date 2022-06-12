@@ -5,6 +5,7 @@ ob_start();
 $title = 'NOM DU SITE';
 $subtitle = $info_categ['name'];
 
+
 echo '<main>';
 while($r = $list_art->fetch(PDO::FETCH_ASSOC))
 {

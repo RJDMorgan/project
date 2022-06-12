@@ -34,7 +34,7 @@ class ManageArticle extends Manage
     public function getArtMember(int $id, int $categ):object
     {
         $data = ['id'=> $id,
-            'categ'=> $categ];
-            return $this->getQuery("SELECT id, title, date, categorie_id FROM article WHERE user_id=:id AND categorie_id=:categ", $data);
+                'categ'=> $categ];
+            return $this->getQuery("SELECT id, title, DATE_FORMAT(date, '%d-%m-%Y') as date, categorie_id FROM article WHERE user_id=:id AND categorie_id=:categ", $data);
     }
 }

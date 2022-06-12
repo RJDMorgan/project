@@ -10,7 +10,7 @@ header
 {
     border:1px solid #800;
     margin-bottom:10px;
-    height:60px;
+    height:80px;
     text-align:center;
 }
 
@@ -90,7 +90,7 @@ footer
 .categMembre
 {
     background-color:black;
-    width:10%;
+    width:15%;
     border-radius:5px 5px 0 0;
     margin-right:2px;
     text-align:center;
@@ -99,8 +99,10 @@ footer
 
 .listArtMembre
 {
+    background-color:#000;
     width:80%;
-    
+    margin:0 auto;
+    color:#fff;
 }
 
 /*************************CATEGORIE*/
