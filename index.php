@@ -20,6 +20,10 @@ switch($page)
     case 'login' :
         require './controller/login.php';
         break;
+    
+    case 'profil' :
+        require './controller/profil.php';
+        break;
         
     case 'categorie' :
         require './controller/categorie.php';

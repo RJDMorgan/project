@@ -8,7 +8,8 @@
 </head>
 <body>
     
-    <nav class="<?=$nav_site?>">
+    <!--Navigation Site dans la page Membre-->
+    <nav class="<?=$nav_site?>"> 
         <a class="<?=$nav[1]?>" href = "index.php?page=categorie&id=1">Jeux Vidéos</a>
         <a class="<?=$nav[2]?>" href = "index.php?page=categorie&id=2">Manga/ Anime</a>
         <a class="<?=$nav[3]?>" href = "index.php?page=categorie&id=3">Cinéma</a>
@@ -23,6 +24,7 @@
     
     <a class="<?=$login?>" href = "index.php?page=login">LOG IN</a>
     
+    <!--Navigation page Home-->
     <nav class="<?=$nav_categ?>">
         <a class="<?=$nav[1]?>" href = "index.php?page=categorie&id=1">Jeux Vidéos</a>
         <a class="<?=$nav[2]?>" href = "index.php?page=categorie&id=2">Manga/ Anime</a>
@@ -30,8 +32,7 @@
         <a class="<?=$nav[4]?>" href = "index.php?page=categorie&id=4">Séries TV</a>
     </nav>
     
-    <?=$content?>
-        
+        <?=$content?>
         
     <footer>
         Copyright and Company !!! 
