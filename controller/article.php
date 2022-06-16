@@ -9,6 +9,7 @@ $article = new ManageArticle();
 $text_article = $article->getArticle($id);
 
 $nav_site = 'nav_site';
+$nav_membre = 'navMembre';
 
 $presentation = 'hidden';
 $nav_home = 'hidden';

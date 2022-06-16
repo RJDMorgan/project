@@ -1,3 +1,8 @@
+/*font-family: 'Eagle Lake', cursive;*/
+/*font-family: 'Grechen Fuemen', cursive;*/
+/*font-family: 'Jim Nightshade', cursive;*/
+/*font-family: 'Long Cang', cursive;*/
+
 body
 {
     background:url('../medias/home.jpg') no-repeat center/cover;
@@ -8,10 +13,16 @@ body
 
 header
 {
-    border:1px solid #800;
-    margin-bottom:10px;
     height:80px;
+    margin:0 auto;
     text-align:center;
+    font-family: 'Eagle Lake', cursive;
+    font-size:50px;
+}
+
+h1
+{
+    margin:10px auto;
 }
 
 .login
@@ -54,10 +65,10 @@ a
 
 .nav_categ
 {
-    margin:10px;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color:#fff;
 }
 
 .nav_site
@@ -73,7 +84,6 @@ a
 
 footer
 {
-    border:1px solid #080;
     height:25px;
     text-align:center;
     text-decoration:none;
@@ -88,9 +98,8 @@ footer
 /*****************************MEMBRE*/
 .navMembre
 {
-    width:80%;
     display:flex;
-    margin:0 auto;
+    justify-content:space-between;
 }
 
 .categMembre
@@ -98,7 +107,6 @@ footer
     background-color:black;
     width:15%;
     border-radius:5px 5px 0 0;
-    margin-right:2px;
     text-align:center;
     color:white;
 }
@@ -124,16 +132,13 @@ footer
 /*************************CATEGORIE*/
 main
 {
-    width:80%;
-    margin:10px auto;
+    margin:5px auto;
 }
 
 .info_kiji
 {
-    border:2px solid #800;
-    border-radius:10px;
-    width:80%;
-    margin:10px auto;
+    border:1px solid #800;
+    margin:5px auto;
     text-align:center;
 }
 
@@ -146,18 +151,16 @@ main
 .textarticle
 {
     background-color:black;
-    width:80%;
-    margin:0 auto;
     color:white;
 }
 
 .textarticle>p
 {
     margin:0;
-    padding:10px;
+    padding:5px;
 }
 
-/******************************FORM*/
+/*******************************FORM*/
 .formulaire
 {
     display:flex;
@@ -199,22 +202,46 @@ main
     }
 }
 
-/***************ARTICLES**CATEGORIE*/
-@media(min-width:1024px)
+/****************ARTICLES**CATEGORIE*/
+@media(min-width:768px)
 {
     main
     {
-        width:90%;
-        margin:0 auto;
-        display:flex;
-        gap:20px;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        gap:5px;
+    }
+    
+    main>a
+    {
+        width:49%;
     }
     
     .info_kiji
     {
-        border:2px solid #800;
+        border:1px solid #800;
+        text-align:center;
+    }
+}
+
+@media(min-width:1024px)
+{
+    main
+    {
+        width:80%;
+        justify-content:center;
+    }
+    
+    main>a
+    {
+        width:20%;
+    }
+    
+    .info_kiji
+    {
+        border:1px solid #800;
         border-radius:10px;
-        width:150px;
         height:150px;
         text-align:center;
         transition:all 800ms;
@@ -225,5 +252,16 @@ main
     {
         transition:all 800ms;
         transform:scale(0.8);
+    }
+}
+
+/******************ARTICLES**MEMBRES*/
+@media(min-width:768px)
+{
+    .navMembre,
+    .textarticle
+    {
+        width:80%;
+        margin:0 auto;
     }
 }

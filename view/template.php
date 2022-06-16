@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?=$title?></title>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Grechen+Fuemen&family=Jim+Nightshade&family=Long+Cang&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/styles.css" type="text/css">
 </head>
 <body>
