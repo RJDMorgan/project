@@ -1,7 +1,7 @@
 <?php //view
 
-$title = 'NOM DU SITE';
-$subtitle = 'NOM DU SITE';
+$title = 'SHI NO KIJI';
+$subtitle = 'SHI NO KIJI';
 
 $content = '';
 

@@ -7,9 +7,15 @@ if(isset($_GET['deconnex']))
     session_destroy();
 }
 
+if(isset($_POST['connexion'])
+{
+    if(isset($_POST['pseudo'] && $_POST['password']))
+    {
+        
+    }
+}
+
 echo '<main>
-        activer/désactiver la section présentation
-        <br><br>
         désactiver le suivi des auteurs
         <br><br>
         activer/désactiver com-mess privé
@@ -17,6 +23,8 @@ echo '<main>
         déconnection- désinscription
         <br><br>
         (ainsi que toute la partie personnalisation)
+        <br><br>
+        bouton valider, vers l\'onglet Mon Accueil
     </main>';
     
 // lorsqu'on clique sur inscription on arrive sur la page param

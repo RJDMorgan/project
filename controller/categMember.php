@@ -14,6 +14,8 @@ if(isset($cat_id))
 
 $nav_site = 'nav_site';
 
+$presentation = 'hidden';
+$nav_home = 'hidden';
 $nav_categ = 'hidden';
 $login = 'hidden';
 

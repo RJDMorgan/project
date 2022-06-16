@@ -20,8 +20,11 @@ if(isset($_POST['submit']))
 
 };
 
+$nav_site = 'nav_site';
+
+$presentation = 'hidden';
+$nav_home = 'hidden';
 $nav_categ = 'hidden';
-$nav_site = 'hidden';
 $login = 'hidden';
 
 require './view/login.php';
