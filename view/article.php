@@ -3,7 +3,7 @@
 $article = $text_article->fetch();
 
 $title = 'Nom du site';
-$subtitle = 'Nom de l\'auteur(e) : '.$article['title'].'';
+$subtitle = 'Nom de l\'auteur(e) : <br>'.$article['title'].'';
 
 ob_start();
 

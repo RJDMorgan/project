@@ -5,39 +5,41 @@
 
 body
 {
-    background:url('../medias/home.jpg') no-repeat center/cover;
-    color:black;
+    background:url('../medias/home1.jpg') no-repeat center/cover;
+    color:#000;
     margin:0;
     padding:0;
 }
 
 header
 {
-    height:80px;
     margin:0 auto;
     text-align:center;
-    font-family: 'Eagle Lake', cursive;
-    font-size:50px;
 }
 
 h1
 {
-    margin:10px auto;
+    margin:0 auto;
+    font-family: 'Eagle Lake', cursive;
+    font-size:40px;
 }
 
 .login
 {
-    border:1px solid #008;
-    margin:10px auto;
+    background:url('../medias/navig.jpg') no-repeat center/cover;
+    height:20px;
     display:block;
+    font-family: 'Grechen Fuemen', cursive;
+    font-weight:bold;
     text-align:center;
 }
 
 .presentation
 {
-    margin:0 auto;
-    padding:2px;
-    background-color:#fff;
+    padding:1px;
+    background-color:#e2ba78;
+    font-family: 'Jim Nightshade', cursive;
+    font-size:25px;
     text-align:center;
 }
 
@@ -68,18 +70,30 @@ a
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color:#fff;
+    font-family: 'Jim Nightshade', cursive;
+    background-color:#e2ba78;
+}
+
+.nav_categ>a
+{
+    font-size:20px;
 }
 
 .nav_site
 {
-    background-color:#fff;
+    background:url('../medias/navig.jpg') no-repeat center/cover;;
     margin:0 auto;
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+    font-family: 'Jim Nightshade', cursive;
     position:sticky;
     top:0;
+}
+
+.nav_site>a
+{
+    color:#fff;
 }
 
 footer
@@ -98,17 +112,20 @@ footer
 /*****************************MEMBRE*/
 .navMembre
 {
+    margin:5px auto;
     display:flex;
     justify-content:space-between;
 }
 
 .categMembre
 {
-    background-color:black;
-    width:15%;
-    border-radius:5px 5px 0 0;
-    text-align:center;
-    color:white;
+    background:url('../medias/navMembre.jpg') no-repeat center/cover;
+    width: 15%;
+    padding: 13px;
+    border-radius: 5px;
+    font-family: 'Jim Nightshade', cursive;
+    font-weight: bold;
+    text-align: center;
 }
 
 .artMembre
@@ -133,6 +150,7 @@ footer
 main
 {
     margin:5px auto;
+    justify-content:center;
 }
 
 .info_kiji
@@ -150,6 +168,7 @@ main
 
 .textarticle
 {
+    font-family: 'Long Cang', cursive;
     background-color:black;
     color:white;
 }
@@ -176,6 +195,11 @@ main
 /*******************************HOME*/
 @media(min-width:768px)
 {
+    h1
+    {
+        font-size:50px;
+    }
+    
     .nav_home
     {
         flex-direction:row;
@@ -200,6 +224,7 @@ main
         width: 20%;
         color: #fff;
     }
+    
 }
 
 /****************ARTICLES**CATEGORIE*/
@@ -230,7 +255,6 @@ main
     main
     {
         width:80%;
-        justify-content:center;
     }
     
     main>a
@@ -258,7 +282,25 @@ main
 /******************ARTICLES**MEMBRES*/
 @media(min-width:768px)
 {
-    .navMembre,
+    .navMembre
+    {
+        height: 45px;
+        margin:10px auto;
+    }
+    
+    .textarticle
+    {
+        background-color: #000;
+    }
+}
+
+@media(min-width:1024px)
+{
+    .navMembre
+    {
+        width:80%;
+    }
+    
     .textarticle
     {
         width:80%;

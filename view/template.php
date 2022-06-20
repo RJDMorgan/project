@@ -6,6 +6,7 @@
     <title><?=$title?></title>
     <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Grechen+Fuemen&family=Jim+Nightshade&family=Long+Cang&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/styles.css" type="text/css">
+    <link rel="shortcut icon" href="" type="public/images/jpg">
 </head>
 <body>
     
@@ -30,6 +31,8 @@
         En attendant vos inspirations, bon voyage chez les auteur(e)s !!!
         </p>
     </div>
+    
+    <div class="login"></div>
     
     <!--Navigation page Home-->
     <nav class="<?=$nav_home?>">
