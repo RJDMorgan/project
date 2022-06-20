@@ -2,7 +2,7 @@
 session_start();
 
 // lorsqu'on clique sur connexion on arrive sur la page profil (mon Accueil)
-$title = 'Nom du site';
+$title = 'SHI NO KIJI';
 $subtitle = 'Pseudo de l\'auteur(e)';
 
 $nav_site = 'nav_site';

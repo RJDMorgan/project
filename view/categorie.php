@@ -2,7 +2,7 @@
 
 ob_start();
 
-$title = 'NOM DU SITE';
+$title = 'SHI NO KIJI';
 $subtitle = $info_categ['name'];
 
 

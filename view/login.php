@@ -1,6 +1,6 @@
 <?php //view
 
-$title = 'NOM DU SITE';
+$title = 'SHI NO KIJI';
 
 $subtitle = 'LOG IN...';
 

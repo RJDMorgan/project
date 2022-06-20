@@ -2,7 +2,7 @@
 
 ob_start();
 
-$title = 'Nom du site';
+$title = 'SHI NO KIJI';
 $subtitle = 'Nom de l\'auteur';
          
 echo '<div class="artMembre">';

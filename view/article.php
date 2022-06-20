@@ -2,7 +2,7 @@
 
 $article = $text_article->fetch();
 
-$title = 'Nom du site';
+$title = 'SHI NO KIJI';
 $subtitle = 'Nom de l\'auteur(e) : <br>'.$article['title'].'';
 
 ob_start();
