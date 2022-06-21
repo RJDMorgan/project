@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Grechen+Fuemen&family=Jim+Nightshade&family=Long+Cang&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/styles.css" type="text/css">
     <link rel="shortcut icon" href="" type="public/images/jpg">
+    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
     
@@ -20,7 +21,7 @@
     </nav>
     
     <header>
-            <h1><?=$subtitle?></h1>
+        <h1><?=$subtitle?></h1>
     </header>
     
     <a class="<?=$login?>" href = "index.php?page=login">LOG IN</a>
@@ -36,10 +37,20 @@
     
     <!--Navigation page Home-->
     <nav class="<?=$nav_home?>">
-        <a class="<?=$nav[1]?>" href = "index.php?page=categorie&id=1">Jeux Vidéos</a>
-        <a class="<?=$nav[2]?>" href = "index.php?page=categorie&id=2">Manga/ Anime</a>
-        <a class="<?=$nav[3]?>" href = "index.php?page=categorie&id=3">Cinéma</a>
-        <a class="<?=$nav[4]?>" href = "index.php?page=categorie&id=4">Séries TV</a>
+        <a class="<?=$nav[1]?>" href = "index.php?page=categorie&id=1">
+            <img src = "./public/medias/jeuxVidéos.jpg" alt="">
+        </a>
+        
+        <a class="<?=$nav[2]?>" href = "index.php?page=categorie&id=2">
+            <img src = "./public/medias/manga.jpg" alt="">
+        </a>
+        
+        <a class="<?=$nav[3]?>" href = "index.php?page=categorie&id=3">
+            <img src = "./public/medias/cinema.jpg" alt="">
+        </a>
+        <a class="<?=$nav[4]?>" href = "index.php?page=categorie&id=4">
+            <img src = "./public/medias/series.jpg" alt="">
+        </a>
     </nav>
     
     

@@ -4,7 +4,7 @@ ob_start();
 
 $title = 'SHI NO KIJI';
 $subtitle = 'Nom de l\'auteur';
-         
+
 echo '<div class="artMembre">';
 if($list_art_perso->rowCount())
 {

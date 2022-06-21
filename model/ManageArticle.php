@@ -35,6 +35,6 @@ class ManageArticle extends Manage
     {
         $data = ['id'=> $id,
                 'categ'=> $categ];
-            return $this->getQuery("SELECT id, title, DATE_FORMAT(date, '%d-%m-%Y') as date, categorie_id FROM article WHERE user_id=:id AND categorie_id=:categ", $data);
+        return $this->getQuery("SELECT id, title, DATE_FORMAT(date, '%d-%m-%Y') as date, categorie_id FROM article WHERE user_id=:id AND categorie_id=:categ", $data);
     }
 }

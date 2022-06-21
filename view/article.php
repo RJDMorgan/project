@@ -21,6 +21,8 @@ ob_start();
             <p>'.$article['date'].'</p>
          </div>';
          
+         
+         
 
 $content = ob_get_clean();
 
