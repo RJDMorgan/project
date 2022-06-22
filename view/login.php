@@ -30,7 +30,7 @@ $token = bin2hex(md5(uniqid(random_bytes(32))));
         
         <input type="submit" name="submit" value="Inscription"/>
     </form>
-    
+    <hr>
     <form class="connex" action="" method="POST">
         <label for="pseudo">Pseudo : </label><br>
         <input type="text" name="pseudo" id="pseudo"/><br>
