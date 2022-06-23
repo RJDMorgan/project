@@ -4,15 +4,12 @@ class Manage
 {
     protected function db_connect()
     {
-        $server = 'db.3wa.io';
-        $login = 'romualddugast';
-        $pwd = 'dec233f4582c63f91161cbf37b3ee0d9';
-        $base = 'romualddugast_project';
-        
-        try {
-            $db = new PDO('mysql:host='.$server.';port=3306;dbname='.$base.';charset=utf8', $login, $pwd);    
+        try
+        {
+            $db = new PDO('mysql:host='.SERVER.';port=3306;dbname='.BASE.';charset=utf8', LOGIN, PWD);
         }
-        catch (PDOException $e) {
+        catch (PDOException $e)
+        {
             echo '<h3>Site en maintenance...</h3>';
             echo $e->getMessage();
             exit;
@@ -28,5 +25,9 @@ class Manage
         return $stmt;
     }
     
+    public function router(string $page):string
+    {
+        return realpath(in_array($page, array_keys(ROUTES))?CONTROLLER_FOLDER.ROUTES[$page]:CONTROLLER_FOLDER.DEFAULT_ROUTE);
+    }
     
 }

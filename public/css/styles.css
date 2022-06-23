@@ -131,7 +131,7 @@ footer
 .categMembre
 {
     background:url('../medias/navMembre.jpg') no-repeat center/cover;
-    width: 15%;
+    width: 20%;
     padding: 13px 13px 10px 5px;
     border-radius: 5px;
     font-family: 'Jim Nightshade', cursive;
@@ -161,12 +161,6 @@ footer
 }
 
 /*************************CATEGORIE*/
-main
-{
-    margin:5px auto;
-    justify-content:center;
-}
-
 .info_kiji
 {
     border:1px solid #800;
@@ -187,7 +181,7 @@ main
     color:white;
 }
 
-.textarticle>p
+.textarticle section>p
 {
     margin:0;
     padding:5px;

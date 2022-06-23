@@ -16,10 +16,12 @@ ob_start();
             <a href="index.php?page=categMember&id='.$article['user_id'].'&categ=4" class="categMembre">Séries TV</a>
          </nav>
     
-         <div class="textarticle">
-            <p>'.$article['content'].'</p>
-            <p>'.$article['date'].'</p>
-         </div>';
+         <main class="textarticle">
+            <section>
+                <p>'.$article['content'].'</p>
+                <p>'.$article['date'].'</p>
+            </section>
+         </main>';
          
          
          

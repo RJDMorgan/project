@@ -1,42 +1,14 @@
 <?php
+require_once 'config/config.php';
+require_once 'model/Manage.php';
+$global = new Manage();
 
-$page = '';
-
-if(isset($_GET['page']))
-{
-    $page = $_GET['page'];
-}
-
-if(isset($_GET['id']))
-{
-    $id = intval($_GET['id']);
-}
+// Récupération des paramètres
+$page = $_GET['page']?? '';
+$id = $_GET['id']?? 0;
 
 $nav_categ = '';
 $nav = array('','','','','');
 
-switch($page)
-{
-    case 'login' :
-        require './controller/login.php';
-        break;
-    
-    case 'profil' :
-        require './controller/profil.php';
-        break;
-        
-    case 'categorie' :
-        require './controller/categorie.php';
-        break;
-        
-    case 'article' :
-        require './controller/article.php';
-        break;
-        
-    case 'categMember' :
-        require './controller/categMember.php';
-        break;
-        
-    default :
-        require './controller/home.php';
-}
+// Routeur
+require $global->router($page);
