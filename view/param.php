@@ -1,24 +1,9 @@
 <?php //view
 session_start();
 
-if(isset($_GET['deconnex']))
+if(isset($_POST['submit']))
 {
-    unset($_SESSION);
-    session_destroy();
-}
-
-if(isset($_POST['connexion']))
-{
-    if(isset($_POST['pseudo'] && $_POST['password']))
-    {
-        if($data[0]==1)
-        {
-            session_start();
-            $_SESSION['pseudo'] = $_POST['pseudo'];
-            header('location: param.php');
-            exit();
-        }
-    }
+    if(isset($_POST[]))
 }
 
 

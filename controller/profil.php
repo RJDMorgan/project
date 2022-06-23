@@ -8,7 +8,11 @@ require './model/ManageProfil.php';
 
 
 
+$nav_site = 'nav_site';
 
+$presentation = 'hidden';
+$nav_home = 'hidden';
+$nav_categ = 'hidden';
+$login = 'hidden';
 
-$welcome = 'hidden';
 require './view/profil.php';

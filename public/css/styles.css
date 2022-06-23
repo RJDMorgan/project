@@ -122,10 +122,7 @@ footer
 .navMembre
 {
     background-color:#000;
-    border-radius:5px 5px 0 0;
-    margin:5px auto 0;
     display:flex;
-    justify-content:space-between;
 }
 
 .categMembre
@@ -133,7 +130,6 @@ footer
     background:url('../medias/navMembre.jpg') no-repeat center/cover;
     width: 20%;
     padding: 13px 13px 10px 5px;
-    border-radius: 5px;
     font-family: 'Jim Nightshade', cursive;
     font-weight: bold;
     text-align: center;
@@ -177,8 +173,8 @@ footer
 .textarticle
 {
     font-family: 'Long Cang', cursive;
-    background-color:black;
-    color:white;
+    background-color:#e2ba78;
+    color:#000;
 }
 
 .textarticle section>p
@@ -289,6 +285,8 @@ hr
     main
     {
         width:80%;
+        margin:0 auto;
+        justify-content:center;
     }
     
     main>a
@@ -316,28 +314,30 @@ hr
 /******************ARTICLES**MEMBRES*/
 @media(min-width:768px)
 {
+    .navArtMembre
+    {
+        display:flex;
+    }
+    
     .navMembre
     {
-        height: 45px;
-        margin:10px auto 0;
+        width:20%;
+        flex-direction:column;
+    }
+    
+    .navMembre>a
+    {
+        width:90%;
+        margin-bottom:5px;
     }
     
     .textarticle
     {
-        background-color: #000;
+        width:80%;
     }
 }
 
 @media(min-width:1024px)
 {
-    .navMembre
-    {
-        width:80%;
-    }
     
-    .textarticle
-    {
-        width:80%;
-        margin:0 auto;
-    }
 }

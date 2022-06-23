@@ -1,4 +1,5 @@
 <?php //view
+session_start();
 
 ob_start();
 

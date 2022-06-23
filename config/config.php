@@ -9,6 +9,7 @@ const CONTROLLER_FOLDER = 'controller/';
 
 const ROUTES = [
         'login' => 'login.php',
+        'param' => 'param.php',
         'profil' =>  'profil.php',
         'categorie' => 'categorie.php',
         'article' => 'article.php',
