@@ -1,5 +1,5 @@
-<?php
+<?php 
 
-'Ce n\'est pas le bon chemin'
+// echo 'Ce n\'est pas le bon chemin'
 
 ?>

@@ -11,19 +11,19 @@ ob_start();
     echo
         '<div class="navArtMembre">
             <nav class="navMembre">
-                <a href="index.php?page=profil" class="categMembre">Mon Accueil</a>
+                <a href="index.php?page=profil&id='.$article['user_id'].'" class="categMembre">Mon Accueil</a>
                 <a href="index.php?page=categMember&id='.$article['user_id'].'&categ=1" class="categMembre">Jeux Vidéos</a>
                 <a href="index.php?page=categMember&id='.$article['user_id'].'&categ=2" class="categMembre">Manga/ Anime</a>
                 <a href="index.php?page=categMember&id='.$article['user_id'].'&categ=3" class="categMembre">Cinéma</a>
                 <a href="index.php?page=categMember&id='.$article['user_id'].'&categ=4" class="categMembre">Séries TV</a>
-             </nav>
+            </nav>
         
-             <main class="textarticle">
+            <main class="textarticle">
                 <section>
                     <p>'.$article['content'].'</p>
                     <p>'.$article['date'].'</p>
                 </section>
-             </main>
+            </main>
         </div>';
          
          

@@ -119,9 +119,19 @@ footer
 }
 
 /*****************************MEMBRE*/
+.homeUser
+{
+    background-color:#e2ba78;
+    flex-direction:column;
+}
+
+.homeUser>section
+{
+    margin-bottom:10px;
+}
+
 .navMembre
 {
-    background-color:#000;
     display:flex;
 }
 
@@ -328,7 +338,7 @@ hr
     .navMembre>a
     {
         width:90%;
-        margin-bottom:5px;
+        margin-bottom:30px;
     }
     
     .textarticle
@@ -339,5 +349,8 @@ hr
 
 @media(min-width:1024px)
 {
-    
+    .navMembre
+    {
+        width:15%;
+    }
 }

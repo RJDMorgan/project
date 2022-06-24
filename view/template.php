@@ -48,6 +48,7 @@
         <a class="<?=$nav[3]?>" href = "index.php?page=categorie&id=3">
             <img src = "./public/medias/cinema.jpg" alt="">
         </a>
+        
         <a class="<?=$nav[4]?>" href = "index.php?page=categorie&id=4">
             <img src = "./public/medias/series.jpg" alt="">
         </a>

@@ -1,8 +1,9 @@
 <?php //controller
+require './model/ManageProfil.php';
 
+$profil = new ManageProfil();
 
-
-
+$inscrit = $create->fetch();
 
 
 $nav_site = 'nav_site';

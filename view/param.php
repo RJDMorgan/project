@@ -1,10 +1,18 @@
 <?php //view
 session_start();
 
-if(isset($_POST['submit']))
+if(isset($_GET['deconnex']))
 {
-    if(isset($_POST[]))
-}
+    unset($_SESSION);
+    session_destroy();
+};
+
+$inscrit_priv = $inscrit->fetch();
+
+ob_start();
+
+$title = 'SHI NO KIJI';
+$subtitle = 'Nom de l\'auteur';
 
 
 echo '<main>
@@ -18,5 +26,9 @@ echo '<main>
         <br><br>
         bouton valider, vers l\'onglet Mon Accueil
     </main>';
+    
+$content = ob_get_clean();
+
+require 'template.php';
     
 // lorsqu'on clique sur inscription on arrive sur la page param
