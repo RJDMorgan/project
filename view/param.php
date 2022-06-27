@@ -7,12 +7,10 @@ if(isset($_GET['deconnex']))
     session_destroy();
 };
 
-$inscrit_priv = $inscrit->fetch();
-
 ob_start();
 
 $title = 'SHI NO KIJI';
-$subtitle = 'Nom de l\'auteur';
+$subtitle = 'Nom auteur(e)';
 
 
 echo '<main>

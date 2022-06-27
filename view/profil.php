@@ -2,12 +2,11 @@
 session_start();
 
 
+ob_start();
 
 // lorsqu'on clique sur connexion on arrive sur la page profil (profil.php)
 $title = 'SHI NO KIJI';
-$subtitle = 'Pseudo de l\'auteur(e)';
-
-
+$subtitle = 'Nom auteur(e)';
 
 echo '<main class="homeUser">
         <section>

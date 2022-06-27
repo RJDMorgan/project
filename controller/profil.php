@@ -2,7 +2,7 @@
 
 require './model/ManageProfil.php';
 
-
+$profil = new ManageProfil();
 
 
 

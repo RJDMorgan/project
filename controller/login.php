@@ -18,32 +18,38 @@ if(isset($_POST['submit']))
     
     $create = $profil->createProfil($pseudo, $mail, $password, $city, $cp);
     
-    header('location:param.php');
+    header('location:index.php?page=param');
 
 };
 
-if(isset($_POST['connexion'])) // appeler la function connectprofil ou pas...
+if(isset($_POST['connexion']))
 {
-    $pseudo = htmlspecialchars($_POST['pseudo'])??'';
-    
-    $password = htmlspecialchars(password_verify($_POST['password'], PASSWORD_BCRYPT))??'';
-    
-    if($_POST['pseudo']=='pseudo' && password_verify($_POST['password']))
+    if(!empty($_POST['pseudo']) && !empty($_POST['password']))
     {
-        $_SESSION['pseudo'] = $_POST['pseudo'];
-        $_SESSION['password'] = password_verify($_POST['password']);
-        $_SESSION['ident'] = true;
-        header('location:profil.php');
-    }
-    
-    if(!isset($_SESSION['ident']) || !$_SESSION['ident'])
+        $pseudo = htmlspecialchars($_POST['pseudo']);
+        $password = htmlspecialchars($_POST['password']);
+        $connectMember = $profil->connectProfil($pseudo);
+        $user = $connectMember->fetch(PDO::FETCH_ASSOC);
+        
+        if($user)
+        {
+            if(password_verify($password, $user['password']))
+            {
+                $_SESSION['pseudo'] = $pseudo;
+                $_SESSION['password'] = $password;
+                header('location:index.php?page=profil');
+            }
+            else
+            {
+                echo "Vos identifiants ne sont pas correctes !!";
+            }
+        }
+    else
     {
-        require 'login.php';
-        exit;
+        echo "Veillez à remplir tous les champs..";
     }
-
+    }
 };
-
 
 $nav_site = 'nav_site';
 

@@ -19,14 +19,10 @@ class ManageProfil extends Manage
         
     }
     
-    public function connectProfil(string $pseudo, string $password):object
+    public function connectProfil(string $pseudo):object
     {
-        $data = 
-        [
-            'pseudo' => $pseudo,
-            'password' => $password
-        ];
+        $data = ['pseudo' => $pseudo];
         
-        return $this->getQuery("SELECT pseudo, password FROM users WHERE pseudo=:pseudo AND password=:password", $data);
+        return $this->getQuery("SELECT pseudo, password FROM users WHERE pseudo=:pseudo", $data);
     }
 }
