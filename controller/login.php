@@ -7,17 +7,11 @@ $profil = new ManageProfil();
 if(isset($_POST['submit']))
 {
     $pseudo = htmlspecialchars($_POST['pseudo'])??'';
-    
     $mail = htmlspecialchars($_POST['mail'])??'';
-    
     $password = htmlspecialchars(password_hash($_POST['password'], PASSWORD_BCRYPT))??'';
-    
     $city = htmlspecialchars($_POST['city'])??'';
-    
     $cp = htmlspecialchars($_POST['postal_code'])??'';
-    
     $create = $profil->createProfil($pseudo, $mail, $password, $city, $cp);
-    
     header('location:index.php?page=param');
 
 };
@@ -37,6 +31,7 @@ if(isset($_POST['connexion']))
             {
                 $_SESSION['pseudo'] = $pseudo;
                 $_SESSION['password'] = $password;
+                $_SESSION['id'] = $user['id'];
                 header('location:index.php?page=profil');
             }
             else

@@ -7,11 +7,11 @@ if(isset($_GET['deconnex']))
     session_destroy();
 };
 
+
 ob_start();
 
 $title = 'SHI NO KIJI';
-$subtitle = 'Nom auteur(e)';
-
+$subtitle = isset($_SESSION['id'])?$_SESSION['pseudo']:'Nom de l\'auteur(e)';
 
 echo '<main>
         désactiver le suivi des auteurs

@@ -1,4 +1,11 @@
 <?php //view
+session_start();
+
+if(isset($_SESSION['id']))
+{
+    header('location:index.php?page=home');
+    exit;
+}
 
 $title = 'SHI NO KIJI';
 
